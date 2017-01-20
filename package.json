@@ -1,0 +1,24 @@
+{
+    "name": "wp2",
+    "version": "0.0.1",
+    "main": "index.js",
+    "repository": {},
+    "author": "Sven Helmberger <fforw@gmx.de>",
+    "license": "MIT",
+    "devDependencies": {
+        "babel-core": "^6.21.0",
+        "babel-loader": "^6.2.10",
+        "babel-plugin-espower": "^2.3.2",
+        "babel-preset-es2015": "^6.18.0",
+        "babel-register": "^6.18.0",
+        "mocha": "^3.2.0",
+        "power-assert": "^1.4.2",
+        "webpack": "beta"
+    },
+    "scripts": {
+        "build": "webpack -p",
+        "watch": "webpack -d -w",
+        "test": "mocha --compilers js:babel-register -R spec test/"
+    }
+}
+
