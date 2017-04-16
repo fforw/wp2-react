@@ -1,7 +1,7 @@
 # Project skeleton
 
- * Webpack 2 with Tree shaking 
- * Babel ES2015 preset
+ * Webpack 2
+ * Babel ES2015, React and ES7 class properties
  * Mocha testing
  * Power asserts
 
