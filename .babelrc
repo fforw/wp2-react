@@ -6,9 +6,11 @@
             {
                 "modules": false
             }
-        ]
+        ],
+        "react"
     ],
     "plugins": [
+        "transform-class-properties",
         "babel-plugin-espower"
     ]
 }
