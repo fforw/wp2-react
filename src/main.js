@@ -1,25 +1,16 @@
 
-import React, { Component } from "react"
+import React from "react"
 import { render } from "react-dom"
-
-class Test extends React.Component
-{
-    static defaultProps = {
-        foo: "Hello"
-    }
-
-    render()
-    {
-        return (
-            <div> prop = { this.props.foo }</div>
-        )
-    }
-
-}
 
 window.onload = () =>
 {
-    console.log("start");
+    console.log("onload");
 
-    render(<Test/>, document.getElementById("root"));
+    System.import("./test").then((mod) => {
+
+        console.log("imported", mod);
+        const Test = mod.default;
+
+        render(<Test/>, document.getElementById("root"));
+    });
 };
